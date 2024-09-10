@@ -1,0 +1,46 @@
+:root {
+	--white: #ffffff;
+	--white-soft: #f8f8f8;
+	--white-mute: #f2f2f2;
+	--black: #181818;
+	--black-soft: #222222;
+	--black-mute: #282828;
+
+	--bg: #312940;
+	--sbg: #443957;
+	--light-sbg: #4d4163;
+	--accent: #cb96fe;
+
+	font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+	color: var(--white);
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	max-width: 100vw;
+	min-height: 100vh;
+	background: var(--bg);
+	transition: color 0.5s, background-color 0.5s;
+	line-height: 1.6;
+	padding: 15px 10px;
+
+	& button {
+		outline: none;
+		border: none;
+		border-radius: 15px;
+		text-align: center;
+	}
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+		format('ttf');
+}
